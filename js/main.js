@@ -24,18 +24,14 @@ function SumOfTwoArray (input,output) {
             console.log(nums**3);
         }
     }
+    //Result Output
+    let summma = 0;
+    for (let i = 0;i < input.length || i < output.length; i++) {
+        if (input[i])
+            summma += input[i]
+        if (output[i])
+            summma += output[i]
+    }
+    return summma
 }
-SumOfTwoArray(input,output)
-
-// function SumOftwo (input,output) {
-//     for (let sum of input || output) {
-//         if (sum % 3 === 0) {
-//             console.log(sum*0);
-//         }else if (sum % 5 === 0) {
-//             console.log(sum*0);
-//         }else {
-//             console.log(sum**3);
-//         }
-//     }
-// }
-// SumOftwo(input,output)
+console.log("Result of Output: " + SumOfTwoArray(input,output));
